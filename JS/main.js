@@ -255,8 +255,8 @@ $(window).on('load', function () {
    }
 
   // ************************************************************************************************ */
-  const searchByletter = async (letter,)=> {
-    let searchbyletter =  await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${letter}`)
+  const searchByletter = async (letter)=> {
+    let searchbyletter =  await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`)
         searchbyletter = await searchbyletter.json();
         searchbyletter = searchbyletter.meals;
         console.log(searchbyletter);
